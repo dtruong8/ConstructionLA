@@ -3,7 +3,6 @@
 - [Building and Safety Permit Information](#ladbsdata)
 - [Project Overview](#projectoverview)
     - [System Design](#systemdesign)
-    - [Process Flow](#processflow)
     - [Project Timeline](#projecttimeline)
 - [References](#references)
 - [License](#license)
@@ -17,3 +16,7 @@ You can learn more about Open Data at [data.lacity.org](https://data.lacity.org)
 The Department of Building and Safety issues permits for the construction, remodeling, and repair of buildings and structures in the City of Los Angeles. Permits are categorized into building permits, electrical permits, and mechanical permits (which include plumbing, HVAC systems, fire sprinklers, elevators, and pressure vessels). Depending on the complexity of a project, a permit may be issued the same day with Express Permit or e-Permit ("No Plan Check" category), or a permit may require that the plans be reviewed ("Plan Check" category) by a Building and Safety Plan Check personnel.
 
 You can learn more about LADBS Open Data at [website](https://data.lacity.org/A-Prosperous-City/Building-and-Safety-Permit-Information/yv23-pmwf)
+
+## Project Overview <a name="projectoverview"></a>
+## System Design <a name="systemdesign"></a>
+## Project Timeline <a name="projecttimeline"></a>
