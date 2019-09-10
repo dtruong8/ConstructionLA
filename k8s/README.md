@@ -8,22 +8,26 @@
 ## Introduction <a name="intro"></a>
 This project will use Elastic Cloud on Kubernetes for easy deployment, security, and scalability of Elasticsearch cluster.
 
+## Prerequisite <a name="prereq"></a>
+Recommended Minikube Configuration
+- cpu core - 4
+- memory - 6144 mb
+- storage - 10GB
 
-
-step one minikube start --cpus 4 --memory 6144
+## Instruction <a name="instruction"></a>
 
 Set up Elasticsearch Cloud on Kubernetes
 
-step one kubectl apply -f https://download.elastic.co/downloads/eck/0.9.0/all-in-one.yaml
+1. kubectl apply -f https://download.elastic.co/downloads/eck/0.9.0/all-in-one.yaml
 
-step two kubectl apply -f ./quickstart-es.yml
+2. kubectl apply -f ./quickstart-es.yml
 
-kubectl get elasticsearch
+- kubectl get elasticsearch
 
-step four kubectl apply -f ./quickstart-kibana.yml
+3. kubectl apply -f ./quickstart-kibana.yml
 
-kubectl get kibana
+- kubectl get kibana
 
-step five kubectl port-forward service/quickstart-kb-http 5601
+4. kubectl port-forward service/quickstart-kb-http 5601
 
-https://localhost:5601
+- https://localhost:5601
