@@ -31,3 +31,8 @@ Set up Elasticsearch Cloud on Kubernetes
 4. kubectl port-forward service/quickstart-kb-http 5601
 
 - https://localhost:5601
+
+## Reference <a name="intro"></a>
+[Installing Kubernetes & Minikube](https://kubernetes.io/docs/setup/learning-environment/minikube/)
+[Quickstart Guide to Elastic Cloud on Kubernetes](https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-quickstart.html)
+
