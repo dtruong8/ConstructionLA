@@ -1,8 +1,9 @@
 @{
+    Layout = "~/Views/Shared/_Layout.cshtml";
     ViewData["Title"] = "LA Open Data";
 }
 
-    <div class="text-center" style="background-image: url('~\images\repeated-square.png');background-repeat:repeat">
+    <div class="text-center">
         <h1 class="display-4">Welcome to LA Open Data</h1>
         <a>
             By <p>Dean Truong</p>
@@ -10,12 +11,17 @@
     </div>
     <!--Analytics are placed here-->
     <div class="container-fluid shadow p-3 mb-5 bg-white rounded">
-        <div class="row">
-            <div class="col text-center">Map</div>
-            <div class="col text-center">More graphs</div>
+        <div class="row justify-content-md-center">
+            <div class="col text-center" style="min-height:50vh" id="mapid">Layout 1</div>
+            <div class="col text-center" style="min-height:50vh">Layout 2</div>
+        </div>
+            <div class="row justify-content-center">
+                <div class="col col-lg-2 text-center">Selection One</div>
+                <div class="col col-lg-2 text-center">Selction Two</div>
+                <div class="col col-lg-2 text-center">Selection Three</div>
+            </div>
         </div>
     </div>
     <div class="container shadow p-3 mb-5 bg-white rounded">
         <p>Information about Analytics here</p>
     </div>
-
