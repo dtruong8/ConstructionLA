@@ -4,6 +4,16 @@
 }
 
 <div class="input-group mb-3">
-  <input type="text" class="form-control" placeholder="Contractor's Business">
-  <i class="search icon" style="margin-top:1%;margin-left:98%"></i>
+  <input class="form-control py-2 border-right-0 border" type="search" placeholder="Contractor's Business Name..." id="contractor_business_name">
+    <span class="input-group-append">
+      <div class="input-group-text bg-transparent">
+        <div id="search-icon-center">
+          <i class="search icon"></i>
+          </div>
+      </div>
+    </span>
 </div>
+
+@section Autocomplete{
+   <script src="~/js/search_autocomplete.js"></script>
+}
