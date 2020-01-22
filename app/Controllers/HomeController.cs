@@ -17,18 +17,12 @@ namespace app.Controllers
         {
             _logger = logger;
         }
-
-        public IActionResult Index()
-        {
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
         public IActionResult OpenDataLA()
+        {
+            return View();
+        }
+
+        public IActionResult SearchContractor()
         {
             return View();
         }

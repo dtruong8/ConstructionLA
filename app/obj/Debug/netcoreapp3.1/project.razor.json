@@ -20516,13 +20516,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\dtruo2\\GitHub\\.Net-Core-DV-Open-Data-LADBS\\app\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\dtruo2\\GitHub\\.Net-Core-DV-Open-Data-LADBS\\app\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FilePath": "c:\\Users\\dtruo2\\GitHub\\.Net-Core-DV-Open-Data-LADBS\\app\\Views\\Home\\SearchContractor.cshtml",
+      "TargetPath": "Views\\Home\\SearchContractor.cshtml",
       "FileKind": "mvc"
     },
     {
