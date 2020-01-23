@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using app.Models;
+using SODA;
+using Newtonsoft.Json;
 
 namespace app.Controllers
 {
@@ -26,7 +28,15 @@ namespace app.Controllers
         {
             return View();
         }
-
+        /*
+        public IActionResult SodaResult(){
+            var client = new SodaClient("data.smgov.net", "8YzE0NUTN2pl4gdOcY5fAquLi");
+            var soql = new SoqlQuery().Select("column1", "column2")
+                          .Where("something > nothing")
+                          .Group("column3");
+            return View();
+        }
+        */
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

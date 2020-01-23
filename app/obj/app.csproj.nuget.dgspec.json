@@ -38,6 +38,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "CSM.SodaDotNet": {
+              "target": "Package",
+              "version": "[0.10.1, )"
+            },
             "leaflet": {
               "target": "Package",
               "version": "[0.7.3, )"
