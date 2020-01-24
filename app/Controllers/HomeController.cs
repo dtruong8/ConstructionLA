@@ -28,15 +28,18 @@ namespace app.Controllers
         {
             return View();
         }
-        /*
-        public IActionResult SodaResult(){
-            var client = new SodaClient("data.smgov.net", "8YzE0NUTN2pl4gdOcY5fAquLi");
-            var soql = new SoqlQuery().Select("column1", "column2")
-                          .Where("something > nothing")
-                          .Group("column3");
-            return View();
+       // [HttpGet("[action]")]
+        public string SodaResult(){
+            var client = new SodaClient("data.lacity.org", "8YzE0NUTN2pl4gdOcY5fAquLi","dtruong8@toromail.csudh.edu","Helloworld123.");
+            var soql = new SoqlQuery().Select("distinct contractors_business_name")
+                                      .Where("applicant_relationship='Contractor'")
+                                      .Order("contractors_business_name");
+            var dataset = client.GetResource<ContractorModel>("yv23-pmwf");
+            var results = dataset.Query<ContractorModel>(soql);
+            string json = JsonConvert.SerializeObject(results);
+            return json;
         }
-        */
+        
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
