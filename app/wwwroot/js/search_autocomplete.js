@@ -1,25 +1,11 @@
-var ContractorNames = ["ActionScript",
-    "AppleScript",
-    "Asp",
-    "BASIC",
-    "C",
-    "C++",
-    "Clojure",
-    "COBOL",
-    "ColdFusion",
-    "Erlang",
-    "Fortran",
-    "Groovy",
-    "Haskell",
-    "Java",
-    "JavaScript",
-    "Lisp",
-    "Perl",
-    "PHP",
-    "Python",
-    "Ruby",
-    "Scala",
-    "Scheme"];
-    $("#contractor_business_name").autocomplete({
-        source: ContractorNames
-    });
+function getListNames() {
+    let name = document.getElementById("contractor_business_name").value;
+
+    if (name.length > 1) {
+        $("contractor_business_name").autocomplete({
+            source: "https://localhost5001/SearchContractor/getAllContractorNames " + name
+        });
+    }
+}
+
+
