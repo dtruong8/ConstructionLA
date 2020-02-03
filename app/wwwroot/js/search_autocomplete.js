@@ -1,4 +1,3 @@
-var tags =["Python", "Java","C++", "C"];
 var ContractorNames = [];
 $.ajax({
     url: 'https://localhost:5001/SearchContractor/getAllContractorNames',
@@ -14,11 +13,10 @@ $.ajax({
     error: function (err) {
         alert(err);
     }
-
 });
 
 function getListNames() {
-    console.log(ContractorNames);
+    var tags = ContractorNames
     $("#contractor_business_name").autocomplete({
         source: tags
     });
