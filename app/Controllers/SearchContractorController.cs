@@ -10,17 +10,8 @@ namespace app.Controllers
 {
     public class SearchContractorController
     {
-        public string getAllContractorNames(string businessname) {
-            string condition;
-          
-            if (string.IsNullOrWhiteSpace(businessname))
-            {
-                condition = "applicant_relationship = 'Contractor'";
-            }
-            else
-            {
-                condition = "applicant_relationship = 'Contractor AND contractors_business_name LIKE '" + businessname;
-            }
+        public string getAllContractorNames() {
+            string condition = "applicant_relationship = 'Contractor'";
 
             // Initialize connection to SodaClient
             var client = new SodaClient("https://data.lacity.org", 
