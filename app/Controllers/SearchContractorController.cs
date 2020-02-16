@@ -5,12 +5,15 @@ using System.Threading.Tasks;
 using SODA;
 using Newtonsoft.Json;
 using app.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace app.Controllers
 {
     public class SearchContractorController
     {
-        public string getAllContractorNames() {
+        [HttpGet]
+        public string getAllContractorNames(string phrase) {
+            string condition1 = "applicant_relationship = 'Contractor' and contractors_business_name like %" + phrase + "%";
             string condition = "applicant_relationship = 'Contractor'";
 
             // Initialize connection to SodaClient
@@ -20,7 +23,7 @@ namespace app.Controllers
                 "Helloworld123."); 
             // SOQL string to get contractors business name
             var soql = new SoqlQuery().Select("distinct contractors_business_name")
-                                       .Where(condition)
+                                       .Where(condition1)
                                        .Order("contractors_business_name");
             // Apply query to table Permit Information @ data.lacity.org
             var dataset = client.GetResource<ContractorModel>("yv23-pmwf");

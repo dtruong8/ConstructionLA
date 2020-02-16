@@ -1,7 +1,7 @@
-var ctx = document.getElementById('myChart').getContext('2d');
+var ctx = document.getElementById('chart1').getContext('2d');
 var chart = new Chart(ctx, {
     // The type of chart we want to create
-    type: 'line',
+    type: 'doughnut',
 
     // The data for our dataset
     data: {
@@ -16,10 +16,14 @@ var chart = new Chart(ctx, {
                 'rgba(153, 102, 255, 1)',
                 'rgba(255, 159, 64, 1)'
             ],
-            data: [0, 25, 5, 35, 50, 46]
+            data: [0, 10, 5, 2, 20, 35]
         }]
     },
 
     // Configuration options go here
-    options: {}
+    options: {
+        legend:{
+            display: false
+        }
+    }
 });

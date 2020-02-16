@@ -1,24 +1,28 @@
-var ContractorNames = [];
-$.ajax({
-    url: 'https://localhost:5001/SearchContractor/getAllContractorNames',
-    method: 'get',
-    dataType: 'json',
-    success: function (data) {
-        JSON.stringify(data);
-        for (var i = 0; i < data.length; i++) {
-            ContractorNames.push(data[i].contractors_business_name);
-        }
-        alert(ContractorNames[0]);
+
+var options = {
+
+    url: function(phrase) {
+      return "https://localhost:5001/SearchContractor/getAllContractorNames?phrase="+phrase;
     },
-    error: function (err) {
-        alert(err);
-    }
-});
+  
+    getValue: function(element) {
+      return element.contractors_business_name;
+    },
 
-function getListNames() {
-    var tags = ContractorNames
-    $("#contractor_business_name").autocomplete({
-        source: tags
-    });
-}
-
+    ajaxSettings: {
+      dataType: "json",
+      method: "GET",
+      data: {
+        dataType: "json"
+      }
+    },
+  
+    preparePostData: function(data) {
+      data.phrase = $("#contractor_business_name").val();
+      return data;
+    },
+  
+    requestDelay: 400,
+  };
+  
+  $("#contractor_business_name").easyAutocomplete(options);
