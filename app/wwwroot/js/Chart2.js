@@ -22,6 +22,11 @@ var chart = new Chart(ctx, {
 
     // Configuration options go here
     options: {
+        title:{
+            text: 'Building Type',
+            position: 'top',
+            display: true
+        },
         legend:{
             display: false
         }

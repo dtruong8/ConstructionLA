@@ -6377,21 +6377,17 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\deant\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\deant\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\deant\\GitHub\\.Net-Core-DV-Open-Data-LADBS\\app\\app.csproj",
+      "projectUniqueName": "C:\\Users\\deant\\Github\\.Net-Core-DV-Open-Data-LADBS\\app\\app.csproj",
       "projectName": "app",
-      "projectPath": "C:\\Users\\deant\\GitHub\\.Net-Core-DV-Open-Data-LADBS\\app\\app.csproj",
+      "projectPath": "C:\\Users\\deant\\Github\\.Net-Core-DV-Open-Data-LADBS\\app\\app.csproj",
       "packagesPath": "C:\\Users\\deant\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\deant\\GitHub\\.Net-Core-DV-Open-Data-LADBS\\app\\obj\\",
+      "outputPath": "C:\\Users\\deant\\Github\\.Net-Core-DV-Open-Data-LADBS\\app\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
         "C:\\Users\\deant\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -6452,7 +6448,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

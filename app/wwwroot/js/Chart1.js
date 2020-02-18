@@ -22,6 +22,11 @@ var chart = new Chart(ctx, {
 
     // Configuration options go here
     options: {
+        title:{
+            text: 'Permit Types',
+            position: 'top',
+            display: true
+        },
         legend:{
             display: false
         }
