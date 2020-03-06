@@ -3,18 +3,18 @@
     ViewData["Title"] = "LA Open Data";
 }
     <!--Analytics are placed here-->
-    <div class="container-fluid shadow p-3 mb-5 bg-white square">
+    <div class="container-fluid shadow p-1 mb-1 bg-white square">
         <div class="row justify-content-md-center" style="padding: 10px 50px 10px 50px">
             <div class="col text-center" style="min-height:50vh" id="mapid"></div>
             <div class="col text-center" style="min-height:50vh">
                 <div class="container">
-                    <h3>Number of Permits: 230</h3>
                     <table class="table">
                         <thead>
                             <tr>
                                 <th scope="col">Address</th>
                                 <th scope="col">Permit #</th> 
                                 <th scope="col">Permit Type</th>  
+                                <th scope="col">Status</th>
                             </tr>
                         </thead>
                     </table>
@@ -26,17 +26,17 @@
         <div class="row justify-content-md-center" style="padding: 10px 50px 10px 50px">
             <div class="col text-center">
                 <div class="container shadow p-3 mb-5 bg-white rounded">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+            <div class="col text-center">
+                 <div class="container shadow p-3 mb-5 bg-white rounded">
                     <canvas id="chart1"></canvas>
                 </div>
             </div>
             <div class="col text-center">
                  <div class="container shadow p-3 mb-5 bg-white rounded">
                     <canvas id="chart2"></canvas>
-                </div>
-            </div>
-            <div class="col text-center">
-                 <div class="container shadow p-3 mb-5 bg-white rounded">
-                    <canvas id="myChart"></canvas>
                 </div>
             </div>
         </div>    

@@ -21,5 +21,11 @@ var chart = new Chart(ctx, {
     },
 
     // Configuration options go here
-    options: {}
+    options: {
+        title:{
+            text: 'Number of Permits Per Year',
+            position: 'top',
+            display: true
+        },
+    }
 });

@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\deant\\GitHub\\.Net-Core-DV-Open-Data-LADBS\\app\\app.csproj",
+  "FilePath": "c:\\Users\\deant\\Github\\.Net-Core-DV-Open-Data-LADBS\\app\\app.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -20521,37 +20521,37 @@
   "RootNamespace": "app",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\deant\\GitHub\\.Net-Core-DV-Open-Data-LADBS\\app\\Views\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\deant\\Github\\.Net-Core-DV-Open-Data-LADBS\\app\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\deant\\GitHub\\.Net-Core-DV-Open-Data-LADBS\\app\\Views\\_ViewStart.cshtml",
+      "FilePath": "c:\\Users\\deant\\Github\\.Net-Core-DV-Open-Data-LADBS\\app\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\deant\\GitHub\\.Net-Core-DV-Open-Data-LADBS\\app\\Views\\Shared\\Error.cshtml",
+      "FilePath": "c:\\Users\\deant\\Github\\.Net-Core-DV-Open-Data-LADBS\\app\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\deant\\GitHub\\.Net-Core-DV-Open-Data-LADBS\\app\\Views\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\deant\\Github\\.Net-Core-DV-Open-Data-LADBS\\app\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\deant\\GitHub\\.Net-Core-DV-Open-Data-LADBS\\app\\Views\\Home\\OpenDataLA.cshtml",
+      "FilePath": "c:\\Users\\deant\\Github\\.Net-Core-DV-Open-Data-LADBS\\app\\Views\\Home\\OpenDataLA.cshtml",
       "TargetPath": "Views\\Home\\OpenDataLA.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\deant\\GitHub\\.Net-Core-DV-Open-Data-LADBS\\app\\Views\\Home\\SearchContractor.cshtml",
+      "FilePath": "c:\\Users\\deant\\Github\\.Net-Core-DV-Open-Data-LADBS\\app\\Views\\Home\\SearchContractor.cshtml",
       "TargetPath": "Views\\Home\\SearchContractor.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\deant\\GitHub\\.Net-Core-DV-Open-Data-LADBS\\app\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "c:\\Users\\deant\\Github\\.Net-Core-DV-Open-Data-LADBS\\app\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     }
