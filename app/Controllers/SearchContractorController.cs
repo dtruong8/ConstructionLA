@@ -23,7 +23,7 @@ namespace app.Controllers
                 "Helloworld123."); 
             // SOQL string to get contractors business name
             var soql = new SoqlQuery().Select("distinct contractors_business_name")
-                                       .Where(condition1)
+                                       .Where(condition)
                                        .Order("contractors_business_name");
             // Apply query to table Permit Information @ data.lacity.org
             var dataset = client.GetResource<ContractorModel>("yv23-pmwf");
