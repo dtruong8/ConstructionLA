@@ -18,5 +18,7 @@ The Department of Building and Safety issues permits for the construction, remod
 You can learn more about LADBS Open Data at [website](https://data.lacity.org/A-Prosperous-City/Building-and-Safety-Permit-Information/yv23-pmwf)
 
 ## Project Overview <a name="projectoverview"></a>
+The dashboard will provide data visualization on all projects a contractor has done with The City of Los Angeles. Users will be able to see all permits that have been pulled by the company.
+
 ## System Design <a name="systemdesign"></a>
 ## Project Timeline <a name="projecttimeline"></a>
