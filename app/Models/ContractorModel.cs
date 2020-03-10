@@ -2,8 +2,8 @@ using System;
 
 namespace app.Models
 {
-    public class ContractorModel
+    public class Contractor
     {
-        public string contractors_business_name { get; set; }
+        public string contractor_business_name { get; set; }
     }
 }
