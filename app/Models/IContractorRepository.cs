@@ -7,6 +7,6 @@ namespace app.Models
 {
     public interface IContractorRepository
     {
-        string getContractor();
+        List<Contractor> getContractor();
     }
 }

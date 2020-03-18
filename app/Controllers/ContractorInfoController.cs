@@ -9,13 +9,16 @@ namespace app.Controllers
 {
     public class ContractorInfoController
     {
-        private ContractorRepository _contractor;
-        public ContractorInfoController(ContractorRepository contractor){
+        private IContractorRepository _contractor;
+        public ContractorInfoController(IContractorRepository contractor){
             _contractor = contractor;
         }
 
-        public IActionResult onGet(){
-            return _contractor;
+        public string onGet(){
+            string json = JsonConvert.SerializeObject(_contractor.getContractor());
+            return json;
+
+           
         }
     }
-}
+}		

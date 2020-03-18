@@ -33,11 +33,11 @@ namespace app.Models
         public string unit_range_end{get;set;}
         public int zip_code{get;set;}
         public string work_description{get;set;}
-        public int valuation{get;set;}
-        public int floor_area_l_a_zoning_code_definition {get;set;}
+        public string valuation{get;set;}
+        public string floor_area_l_a_zoning_code_definition {get;set;}
         public int  of_residential_dwelling_units {get;set;}
-        public int _of_accessory_dwelling_un {get;set;}
-        public int of_stores{get;set;}
+        public int _of_accessory_dwelling_units {get;set;}
+        public int of_stories{get;set;}
         public string contractors_business_name {get;set;}
         public string contractor_address {get;set;}
         public string contractor_city {get;set;}
@@ -56,17 +56,19 @@ namespace app.Models
         public string applicant_address_3{get;set;}
         public string zone{get;set;}
         public string occupancy{get;set;}
-        public int floor_area_l_a_building_code_definition{get;set;}
+        public string floor_area_l_a_building_code_definition{get;set;}
         public string census_tract{get;set;}
         public string council_district{get;set;}
-        public string location_1_address{get;set;}
-        public double location_1 {get;set;}
-        public double location_1_city {get;set;}
+        public location_1 location_1 {get;set;}
         public string applicant_relationship{get;set;}
         public string existing_code{get;set;}
-        public string location_1_state{get;set;}
         public string proposed_code{get;set;}
         public string location_1_zip{get;set;}
+    }
+    public class location_1
+    {
+        public double latitude { get; set; }
+        public double longitude { get; set; }
     }
 
 }

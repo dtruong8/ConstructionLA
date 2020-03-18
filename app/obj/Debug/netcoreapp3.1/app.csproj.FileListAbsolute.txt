@@ -216,3 +216,5 @@ C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\a
 C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.csproj.CopyComplete
 C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.dll
 C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.pdb
+C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.csproj.CoreCompileInputs.cache
+C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.genruntimeconfig.cache

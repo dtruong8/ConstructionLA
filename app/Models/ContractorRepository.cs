@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Soda;
+using SODA;
+using Newtonsoft.Json;
 
 namespace app.Models
 {
@@ -21,14 +22,16 @@ namespace app.Models
             // SOQL string to get contractors business name
             var soql = new SoqlQuery().Where("applicant_relationship = 'Contractor'" );
             // Apply query to table Permit Information @ data.lacity.org
-            var dataset = client.GetResource<_contractorList>("yv23-pmwf");
-            // Return result to ContractorModel Object
-            dataset.Query<_contractorList>(soql);
+            var dataset = client.GetResource<Contractor>("yv23-pmwf");
+            // Return json Object
+            _contractorList = dataset.Query<Contractor>(soql).ToList();
+            // Convert object into json string
+            string json = JsonConvert.SerializeObject(_contractorList);
         }
 
-        public string GetContractor()
+        public List<Contractor> getContractor()
         {
-            return "GetContractor Method";
+            return _contractorList;
         }
     }
 }

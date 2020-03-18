@@ -26,9 +26,9 @@ namespace app.Controllers
                                        .Where(condition)
                                        .Order("contractors_business_name");
             // Apply query to table Permit Information @ data.lacity.org
-            var dataset = client.GetResource<ContractorModel>("yv23-pmwf");
+            var dataset = client.GetResource<Contractor>("yv23-pmwf");
             // Return result to ContractorModel Object
-            var results = dataset.Query<ContractorModel>(soql);
+            var results = dataset.Query<Contractor>(soql);
             // Convert object into json string
             string json = JsonConvert.SerializeObject(results);
             return json;
