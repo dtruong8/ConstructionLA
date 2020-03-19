@@ -20,7 +20,8 @@ namespace app.Models
                 "Helloworld123."); 
 
             // SOQL string to get contractors business name
-            var soql = new SoqlQuery().Where("applicant_relationship = 'Contractor'" );
+            var soql = new SoqlQuery().Select("distinct contractors_business_name")
+                                      .Where("applicant_relationship = 'Contractor'" );
             // Apply query to table Permit Information @ data.lacity.org
             var dataset = client.GetResource<Contractor>("yv23-pmwf");
             // Return json Object
