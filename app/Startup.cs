@@ -26,6 +26,7 @@ namespace app
         {
             services.AddControllersWithViews();
             services.AddSingleton<IContractorRepository, ContractorRepository>();
+            services.AddSingleton<IContractorInfoRepository, ContractorInfoRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -52,8 +53,9 @@ namespace app
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=SearchContractor}/{id?}");
+                    pattern: "{controller=Home}/{action=About}/");
             });
+ 
         }
     }
 }

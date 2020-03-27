@@ -6,5 +6,6 @@
     "\\app\\Models",
     "\\app\\Views"
   ],
+  "SelectedNode": "\\app\\Controllers\\HomeController.cs",
   "PreviewInSolutionExplorer": false
 }

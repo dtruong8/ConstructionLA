@@ -1,24 +1,25 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using SODA;
-using Newtonsoft.Json;
+using Microsoft.AspNetCore.Mvc;
 using app.Models;
+using Newtonsoft.Json;
+
 namespace app.Controllers
 {
     public class ContractorInfoController
     {
-        private IContractorRepository _contractor;
-        public ContractorInfoController(IContractorRepository contractor){
-            _contractor = contractor;
+        private IContractorInfoRepository _projectList;
+        public ContractorInfoController (IContractorInfoRepository projectList)
+        {
+            _projectList = projectList;
         }
 
-        public string onGet(){
-            string json = JsonConvert.SerializeObject(_contractor.getContractor());
-            return json;
-
-           
+       [HttpGet]
+       public string getAllProject()
+        {
+            return JsonConvert.SerializeObject(_projectList.getProjectList());
         }
     }
-}		
+}

@@ -203,8 +203,6 @@ C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\a
 C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.TagHelpers.input.cache
 C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.TagHelpers.output.cache
 C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.RazorCoreGenerate.cache
-C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\Razor\Views\Home\OpenDataLA.cshtml.g.cs
-C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\Razor\Views\Home\SearchContractor.cshtml.g.cs
 C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -218,3 +216,6 @@ C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\a
 C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.pdb
 C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.csproj.CoreCompileInputs.cache
 C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.genruntimeconfig.cache
+C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\libman.json
+C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
+C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\Razor\Views\Home\Dashboard.cshtml.g.cs

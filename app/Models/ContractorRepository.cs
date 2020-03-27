@@ -21,13 +21,13 @@ namespace app.Models
 
             // SOQL string to get contractors business name
             var soql = new SoqlQuery().Select("distinct contractors_business_name")
-                                      .Where("applicant_relationship = 'Contractor'" );
+                                      .Where("applicant_relationship = 'Contractor'" )
+                                      .Order("contractors_business_name");
             // Apply query to table Permit Information @ data.lacity.org
             var dataset = client.GetResource<Contractor>("yv23-pmwf");
             // Return json Object
             _contractorList = dataset.Query<Contractor>(soql).ToList();
             // Convert object into json string
-            string json = JsonConvert.SerializeObject(_contractorList);
         }
 
         public List<Contractor> getContractor()

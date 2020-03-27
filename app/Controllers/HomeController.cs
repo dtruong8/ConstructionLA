@@ -11,6 +11,7 @@ using Newtonsoft.Json;
 
 namespace app.Controllers
 {
+    [Route("[controller]")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -19,12 +20,16 @@ namespace app.Controllers
         {
             _logger = logger;
         }
-
-        public IActionResult OpenDataLA()
+        [Route("")]
+        [Route("[action]")]
+        [Route("~/")]
+        public IActionResult About()
         {
             return View();
         }
-        public IActionResult SearchContractor()
+
+        [Route("[action]")]
+        public IActionResult Dashboard()
         {
             return View();
         }

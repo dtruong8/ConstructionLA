@@ -1,0 +1,68 @@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Search Contractor";
+}
+<div class="container-fluid mt-4">
+    <a>
+        <h3 class="text-left">
+            Contractor Name
+        </h3>
+    </a>
+</div>
+<div class="container-fluid mt-1">
+    <div class="row">
+        <div class="col-md-8">
+            <canvas id="line"></canvas>
+        </div>
+        <div class="col-md-4">
+            <a class="text-center">type</a>
+        </div>
+    </div>
+</div>
+<div class="container-fluid mt-1">
+    <div class="row">
+        <div class="col">
+            <div class="container shadow-lg">
+                <canvas id="horizontalbargraph"></canvas>
+            </div>
+        </div>
+        <div class="col">
+            <div class="container shadow-lg">
+                <canvas id="donutgraph"></canvas>
+            </div>
+        </div>
+        <div class="col">
+            <div class="container shadow-lg text-center">
+                <h4>
+                    <a>Average Evaluation</a>
+                </h4>
+                <h3>
+                    <b> $10000.00</b>
+                </h3>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid mt-1">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="container shadow-lg">
+                <div id="mapid"></div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="container shadow-lg">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    @section Dashboard{
+        <script src="~/lib/Chart.js/Chart.bundle.min.js"></script>
+        <script src="~/js/LineGraph.js"></script>
+        <script src="~/js/HorizontalBarGraph.js"></script>
+        <script src="~/js/DonutGraph.js"></script>
+        <script src="~/js/getLeaflet.js"></script>
+
+    }
