@@ -1,0 +1,85 @@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Search Contractor";
+}
+<div class="container mt-4">
+    <a>
+        <h3 class="text-left">
+            Contractor Name
+        </h3>
+    </a>
+</div>
+<div class="container p-3">
+    <div class="row">
+        <div class="col-md">
+            <div class="card border-0 h-100">
+                <div class="card-body">
+                    <div id="mapid" style="height:400px"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md">
+            <div class="card border-0 h-100 shadow-sm">
+                <div class="card-body">
+                    <table class="table table-sm table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">Permit Number</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Permit Type</th>
+                                <th scope="col">Permit Sub-Type</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md">
+            <div class="card border-0 h-100 shadow-sm">
+                <div class="card-body">
+                    <canvas id="line" height="75"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container p-3">
+    <div class="row">
+        <div class="col-md">
+            <div class="card border-0 h-100 shadow-sm">
+                <div class="card-body">
+                    <canvas id="horizontalbargraph"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-md">
+            <div class="card border-0 h-100 shadow-sm">
+                <div class="card-body">
+                    <canvas id="donutgraph"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-md">
+            <div class="card border-0 h-100 shadow-sm">
+                <div class="card-body text-center">
+                    <div class="card-title">Average Evaluation</div>
+                    <div class="card-text">$1,000,000</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    @section Dashboard{
+        <script src="~/lib/leaflet/leaflet.js"></script>
+        <script src="~/lib/Chart.js/Chart.bundle.min.js"></script>
+        <script src="~/js/Charts/LineGraph.js"></script>
+        <script src="~/js/Charts/HorizontalBarGraph.js"></script>
+        <script src="~/js/Charts/DonutGraph.js"></script>
+        <script src="~/js/Map.js"></script>
+    }

@@ -37,7 +37,7 @@ namespace app.Controllers
             }
             return JsonConvert.SerializeObject(filteredresult);
         }
-        [HttpPost]
+        [HttpGet]
         public string getAllContractors()
         {
             return JsonConvert.SerializeObject(_contractor.getContractor());

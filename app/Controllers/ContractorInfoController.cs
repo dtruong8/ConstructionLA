@@ -8,7 +8,8 @@ using Newtonsoft.Json;
 
 namespace app.Controllers
 {
-    public class ContractorInfoController
+    [Route("[controller]")]
+    public class ContractorInfoController: Controller
     {
         private IContractorInfoRepository _projectList;
         public ContractorInfoController (IContractorInfoRepository projectList)
@@ -16,8 +17,15 @@ namespace app.Controllers
             _projectList = projectList;
         }
 
-       [HttpGet]
-       public string getAllProject()
+        [Route("[action]")]
+        public IActionResult Dashboard()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        [Route("[action]")]
+       public string GetAllProject()
         {
             return JsonConvert.SerializeObject(_projectList.getProjectList());
         }
