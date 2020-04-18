@@ -16,31 +16,12 @@ namespace app.Controllers
         {
             _contractor = contractor;
         }
-        [HttpGet]
-        public string getFilteredContractors(string phrase)
-        {
-            string temp_name;
-            List<Contractor> filteredresult = new List<Contractor>();
-            List<Contractor> dataset = _contractor.getContractor();
-            foreach(Contractor name in dataset)
-            {
-                if(name.contractors_business_name is null)
-                {
-                    break;
-                }
-                temp_name = name.contractors_business_name.ToString();
 
-                if (temp_name.Contains(phrase))
-                {
-                    filteredresult.Add(name);
-                }
-            }
-            return JsonConvert.SerializeObject(filteredresult);
-        }
         [HttpGet]
-        public string getAllContractors()
+        public string autocomplete(string phrase)
         {
-            return JsonConvert.SerializeObject(_contractor.getContractor());
+            return JsonConvert.SerializeObject(_contractor.getSuggestions(phrase));
         }
+
     }
 }

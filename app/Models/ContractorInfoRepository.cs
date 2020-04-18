@@ -10,6 +10,7 @@ namespace app.Models
     public class ContractorInfoRepository : IContractorInfoRepository
     {
         private List<ContractorInfo> _projectList;
+
         
         public ContractorInfoRepository()
         {

@@ -7,6 +7,7 @@ namespace app.Models
 {
     public interface IContractorRepository
     {
-        List<Contractor> getContractor();
+        // Provides autocomplete suggestions
+        List<Contractor> getSuggestions(string phrase);
     }
 }

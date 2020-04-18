@@ -306,8 +306,6 @@ C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\bin\
 C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.csprojAssemblyReference.cache
-C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.csproj.CoreCompileInputs.cache
-C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.RazorAssemblyInfo.cache
 C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.RazorAssemblyInfo.cs
 C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.AssemblyInfoInputs.cache
@@ -331,3 +329,7 @@ C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\obj\
 C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.pdb
 C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.genruntimeconfig.cache
 C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\Razor\Views\ContractorInfo\Dashboard.cshtml.g.cs
+C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\Elasticsearch.Net.dll
+C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\Nest.dll
+C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.csproj.CoreCompileInputs.cache
+C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.MvcApplicationPartsAssemblyInfo.cache

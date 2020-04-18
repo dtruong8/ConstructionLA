@@ -4,35 +4,59 @@ using System.Linq;
 using System.Threading.Tasks;
 using SODA;
 using Newtonsoft.Json;
+using Nest;
 
 namespace app.Models
 {
     public class ContractorRepository : IContractorRepository
     {
-        private List<Contractor> _contractorList;
+        private List<Contractor> _contractorList = new List<Contractor>();
+        private readonly IElasticClient _elasticClient;
 
-        public ContractorRepository()
+        public ContractorRepository(IElasticClient elasticClient)
         {
-            _contractorList = new List<Contractor>();
-            var client = new SodaClient("https://data.lacity.org", 
-                "8YzE0NUTN2pl4gdOcY5fAquLi",
-                "dtruong8@toromail.csudh.edu",
-                "Helloworld123."); 
-
-            // SOQL string to get contractors business name
-            var soql = new SoqlQuery().Select("distinct contractors_business_name")
-                                      .Where("applicant_relationship = 'Contractor'" )
-                                      .Order("contractors_business_name");
-            // Apply query to table Permit Information @ data.lacity.org
-            var dataset = client.GetResource<Contractor>("yv23-pmwf");
-            // Return json Object
-            _contractorList = dataset.Query<Contractor>(soql).ToList();
-            // Convert object into json string
+            _elasticClient = elasticClient;
         }
 
         public List<Contractor> getContractor()
         {
             return _contractorList;
         }
+
+        public List<Contractor> getSuggestions(string phrase)
+        {
+            List<Contractor> result = new List<Contractor>();
+            var response = _elasticClient.Search<Contractor>(s => s
+                                                             .Index("contractors")
+                                                             .Query(q => q
+                                                                .Prefix(p => p
+                                                                    .Field(f => f.contractors_business_name)
+                                                                    .Value(phrase)
+                                                                    )
+                                                              )
+                                                             .Source(src => src
+                                                                .Includes(i => i
+                                                                    .Field(
+                                                                        f => f.contractors_business_name)
+                                                                    )
+                                                                )
+                                                             );
+                                                             
+                               
+            if (!response.IsValid)
+            {
+                return result;
+            }
+
+            foreach(var doc in response.Documents)
+            { 
+                result.Add(new Contractor() 
+                { 
+                    contractors_business_name = doc.contractors_business_name
+                });     
+            }
+            return result;
+        }
+
     }
 }
