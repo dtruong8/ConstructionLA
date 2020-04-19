@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Builder Evaluation</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/lib/autocomplete/autocomplete.min.css"/>
+    <link rel="stylesheet" href="~/lib/autocomplete/auto-complete.css"/>
     <link rel="stylesheet" href="~/lib/leaflet/leaflet.css">
     <link rel="stylesheet" href="~/lib/font-awesome/css/all.css" />
     <link rel="stylesheet" href="~/css/site.css" />
@@ -32,7 +32,7 @@
                         <a class="nav-link" asp-area="" asp-controller="ContractorInfo" asp-action="Dashboard">Dashboard</a>
                     </li>
                 </ul>
-                <input id="autoComplete" type="text">
+                <input id="autoComplete" type="text" onkeyup="suggest()" autocomplete="off">
             </div>
         </nav>
     </header>
@@ -49,7 +49,7 @@
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/lib/autocomplete/autocomplete.min.js"></script>
+    <script src="~/lib/autocomplete/auto-complete.js"></script>
     <script src="~/js/initDataVisualization.js"></script>
     <script src="~/js/search_autocomplete.js"></script>
     <!--delete here-->
