@@ -38,9 +38,9 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
-            "CSM.SodaDotNet": {
+            "CassandraCSharpDriver": {
               "target": "Package",
-              "version": "[0.10.1, )"
+              "version": "[3.14.0, )"
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",

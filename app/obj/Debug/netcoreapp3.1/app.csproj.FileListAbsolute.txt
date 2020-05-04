@@ -231,7 +231,6 @@ C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\bin\
 C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\app.pdb
 C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\app.Views.dll
 C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\app.Views.pdb
-C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\SODA.dll
 C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
 C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
@@ -313,7 +312,6 @@ C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\obj\
 C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.TagHelpers.input.cache
 C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.TagHelpers.output.cache
 C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.RazorCoreGenerate.cache
-C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
 C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -328,8 +326,12 @@ C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\obj\
 C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.dll
 C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.pdb
 C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.genruntimeconfig.cache
-C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\Razor\Views\ContractorInfo\Dashboard.cshtml.g.cs
 C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\Elasticsearch.Net.dll
 C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\Nest.dll
 C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.csproj.CoreCompileInputs.cache
 C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\Cassandra.dll
+C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\System.CodeDom.dll
+C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\System.Management.dll
+C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Management.dll
+C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\Razor\Views\Dashboard\Dashboard.cshtml.g.cs

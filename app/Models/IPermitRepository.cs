@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 
 namespace app.Models
 {
-    public interface IContractorInfoRepository
+    public interface IPermitRepository
     {
-        List<ContractorInfo> getProjectList();
+        List<Permit> getProjectList(string name);
     }
 }

@@ -27,8 +27,9 @@ namespace app
         {
             services.AddControllersWithViews();
             services.AddSingleton<IContractorRepository, ContractorRepository>();
-            services.AddSingleton<IContractorInfoRepository, ContractorInfoRepository>();
+            services.AddSingleton<IPermitRepository, PermitRepository>();
             services.AddElasticsearch(Configuration);
+            services.AddCassandra(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -55,7 +56,7 @@ namespace app
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=About}/");
+                    pattern: "{controller=Dashboard}/{action=Dashboard}/");
             });
  
         }

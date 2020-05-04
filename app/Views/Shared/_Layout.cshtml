@@ -15,10 +15,10 @@
           crossorigin="" />
 
 </head>
-<body onload="">
+<body onload="initDataVisualization()">
     <header>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="About">Dashboard</a>
+            <a class="navbar-brand" asp-area="" asp-controller="Dashboard" asp-action="Dashboard">Matrix</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -29,7 +29,7 @@
                         <a class="nav-link" asp-area="" asp-controller="Home" asp-action="About">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" asp-area="" asp-controller="ContractorInfo" asp-action="Dashboard">Dashboard</a>
+                        <a class="nav-link" asp-area="" asp-controller="Dashboard" asp-action="Dashboard">Dashboard</a>
                     </li>
                 </ul>
                 <input id="autoComplete" type="text" onkeyup="suggest()" autocomplete="off">
@@ -52,13 +52,6 @@
     <script src="~/lib/autocomplete/auto-complete.js"></script>
     <script src="~/js/initDataVisualization.js"></script>
     <script src="~/js/search_autocomplete.js"></script>
-    <!--delete here-->
-    <script src="~/lib/leaflet/leaflet.js"></script>
-    <script src="~/lib/Chart.js/Chart.bundle.min.js"></script>
-    <script src="~/js/Charts/LineGraph.js"></script>
-    <script src="~/js/Charts/HorizontalBarGraph.js"></script>
-    <script src="~/js/Charts/DonutGraph.js"></script>
-    <script src="~/js/Map.js"></script>
     @RenderSection("Dashboard", required: false)
 </body>
 </html>
