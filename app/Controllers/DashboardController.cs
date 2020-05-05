@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
 using app.Models;
 using Newtonsoft.Json;
 
@@ -17,6 +18,7 @@ namespace app.Controllers
             _projects = projects;
         }
 
+        [HttpGet]
         [Route("")]
         [Route("~/")]
         [Route("[action]")]
@@ -27,11 +29,14 @@ namespace app.Controllers
 
         [HttpPost]
         [Route("[action]")]
-        public IActionResult Dashboard(string contractor_name)
+        public IActionResult Dashboard(Contractor contractor)
         {
+            string contractor_name = contractor.contractors_business_name.ToString();
             IList<Permit> permitList = new List<Permit>();
+            ViewData["Contractor Name"] = contractor_name;
             permitList = _projects.getProjectList(contractor_name);
-            ViewData["permits"] = permitList;
+            ViewData["Permits"] = permitList;
+            ModelState.Clear();
             return View();
         }
 

@@ -7,6 +7,7 @@ namespace app.Models
 {
     public interface IPermitRepository
     {
+        List<Permit> getAllProjectList();
         List<Permit> getProjectList(string name);
     }
 }

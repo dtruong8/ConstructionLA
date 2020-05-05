@@ -1,43 +1,36 @@
+@model IList<app.Models.Permit>
+@using Newtonsoft.Json
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
-    ViewData["Title"] = "Search Contractor";
+    ViewData["Title"] = "Matrix Dashboard";
+    var records = ViewData["Permits"] as IList<Permit>;
 }
-<div class="container mt-4">
+<div class="container-fluid w-75 py-2">
     <a>
         <h3 class="text-left">
-            Contractor Name
+            @ViewData["Contractor Name"]
         </h3>
     </a>
 </div>
-<div class="container p-3">
+<div class="container-fluid w-75 py-2 h-auto">
     <div class="row">
         <div class="col-md">
             <div class="card border-0 h-100">
                 <div class="card-body">
-                    <div id="mapid" style="height:400px"></div>
+                    <div id="mapid" style="height:100%"></div>
                 </div>
             </div>
         </div>
         <div class="col-md">
             <div class="card border-0 h-100 shadow-sm">
                 <div class="card-body">
-                    <table class="table table-sm table-hover">
-                        <thead>
-                            <tr>
-                                <th scope="col">Permit Number</th>
-                                <th scope="col">Status</th>
-                                <th scope="col">Date</th>
-                                <th scope="col">Permit Type</th>
-                                <th scope="col">Permit Sub-Type</th>
-                            </tr>
-                        </thead>
-                    </table>
+                    <div id="datatable"></div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="container">
+<div class="container-fluid w-75 py-2 mx-auto">
     <div class="row">
         <div class="col-md">
             <div class="card border-0 h-100 shadow-sm">
@@ -48,7 +41,7 @@
         </div>
     </div>
 </div>
-<div class="container p-3">
+<div class="container-fluid w-75 py-2 mx-auto">
     <div class="row">
         <div class="col-md">
             <div class="card border-0 h-100 shadow-sm">
@@ -75,11 +68,21 @@
     </div>
 </div>
 
-    @section Dashboard{
-        <script src="~/lib/leaflet/leaflet.js"></script>
-        <script src="~/lib/Chart.js/Chart.bundle.min.js"></script>
-        <script src="~/js/Charts/LineGraph.js"></script>
-        <script src="~/js/Charts/HorizontalBarGraph.js"></script>
-        <script src="~/js/Charts/DonutGraph.js"></script>
-        <script src="~/js/Map.js"></script>
-    }
+
+@section Dashboard{
+    <script type="text/javascript">
+        var temp_data = @Html.Raw(JsonConvert.SerializeObject(records));
+        console.log(temp_data);
+    </script>
+    <script src="https://unpkg.com/sortablejs@1.7.0/Sortable.min.js"></script>
+    <script src="https://unpkg.com/clusterize.js@0.18.0/clusterize.min.js"></script>
+    <script src="https://unpkg.com/frappe-datatable@0.0.5/dist/frappe-datatable.min.js"></script>
+    <script src="~/lib/leaflet/leaflet.js"></script>
+    <script src="~/lib/Chart.js/Chart.bundle.min.js"></script>
+    <script src="~/js/data_table.js"></script>
+    <script src="~/js/Charts/LineGraph.js"></script>
+    <script src="~/js/Charts/HorizontalBarGraph.js"></script>
+    <script src="~/js/Charts/DonutGraph.js"></script>
+    <script src="~/js/Leaflet/Map.js"></script>
+
+}

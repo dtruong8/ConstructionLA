@@ -1,11 +1,14 @@
-﻿<!DOCTYPE html>
+﻿@model app.Models.Contractor
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Builder Evaluation</title>
+    <title>@ViewData["Title"]</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/lib/autocomplete/auto-complete.css"/>
+    <link href="https://unpkg.com/frappe-datatable@0.0.5/dist/frappe-datatable.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/lib/autocomplete/auto-complete.css" />
     <link rel="stylesheet" href="~/lib/leaflet/leaflet.css">
     <link rel="stylesheet" href="~/lib/font-awesome/css/all.css" />
     <link rel="stylesheet" href="~/css/site.css" />
@@ -32,7 +35,16 @@
                         <a class="nav-link" asp-area="" asp-controller="Dashboard" asp-action="Dashboard">Dashboard</a>
                     </li>
                 </ul>
-                <input id="autoComplete" type="text" onkeyup="suggest()" autocomplete="off">
+                <form class="form-inline w-25" asp-controller="Dashboard" asp-action="Dashboard">
+                    <div class="row w-100">
+                        <div class="form-group w-100">
+                            <div class="input-group w-75">
+                                <input class="form-control" id="autoComplete" type="text" placeholder="Search Business Name..." onkeyup="suggest()" autocomplete="off" asp-for="contractors_business_name">
+                            </div>
+                            <button class="btn btn-outline-success mx-sm-2" type="submit">Search</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </nav>
     </header>

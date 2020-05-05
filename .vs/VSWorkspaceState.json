@@ -6,8 +6,6 @@
     "\\app\\Models",
     "\\app\\obj",
     "\\app\\Views",
-    "\\app\\Views\\ContractorInfo",
-    "\\app\\Views\\Home",
     "\\app\\Views\\Shared"
   ],
   "SelectedNode": "\\app\\Views\\Shared\\_Layout.cshtml",
