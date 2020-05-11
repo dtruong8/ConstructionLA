@@ -30,7 +30,7 @@ function initLineGraph() {
             labels: years,
             datasets: [{
                 label: '# of Permits',
-                backgroundColor: 'rgba(191, 63, 63, 1)',
+                backgroundColor: 'rgba(30,144,255,1)'/*Blue*/,
                 data: num_of_permits,
             }]
         },
@@ -39,6 +39,8 @@ function initLineGraph() {
         options: {
             title: {
                 text: 'Number of Permits Per Year',
+                fontSize: 18,
+                fontColor: '#000000',
                 position: 'top',
                 display: false
             },

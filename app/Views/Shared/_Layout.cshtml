@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"]</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="~/lib/pace/themes/blue/pace-theme-loading-bar.min.css" rel="stylesheet" />
     <link href="https://unpkg.com/frappe-datatable@0.0.5/dist/frappe-datatable.min.css" rel="stylesheet">
     <link rel="stylesheet" href="~/lib/autocomplete/auto-complete.css" />
     <link rel="stylesheet" href="~/lib/leaflet/leaflet.css">
@@ -18,16 +19,16 @@
           crossorigin="" />
 
 </head>
-<body onload="initDataVisualization()">
+<body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a class="navbar-brand" asp-area="" asp-controller="Dashboard" asp-action="Dashboard">Matrix</a>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <a class="navbar-brand" asp-area="" asp-controller="Dashboard" asp-action="Dashboard">Matrix</a>
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" asp-area="" asp-controller="Home" asp-action="About">About</a>
                     </li>
@@ -35,15 +36,9 @@
                         <a class="nav-link" asp-area="" asp-controller="Dashboard" asp-action="Dashboard">Dashboard</a>
                     </li>
                 </ul>
-                <form class="form-inline w-25" asp-controller="Dashboard" asp-action="Dashboard">
-                    <div class="row w-100">
-                        <div class="form-group w-100">
-                            <div class="input-group w-75">
-                                <input class="form-control" id="autoComplete" type="text" placeholder="Search Business Name..." onkeyup="suggest()" autocomplete="off" asp-for="contractors_business_name">
-                            </div>
-                            <button class="btn btn-outline-success mx-sm-2" type="submit">Search</button>
-                        </div>
-                    </div>
+                <form class="form-inline my-2 my-lg-0" asp-controller="Dashboard" asp-action="Dashboard">
+                    <input class="form-control mr-sm-2" id="autoComplete" type="text" placeholder="Search Business Name..." onkeyup="suggest()" autocomplete="off" asp-for="contractors_business_name">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
             </div>
         </nav>
@@ -53,17 +48,12 @@
             @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2020 - app
-        </div>
-    </footer>
+    <script src="~/lib/pace/pace.min.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/lib/autocomplete/auto-complete.js"></script>
-    <script src="~/js/initDataVisualization.js"></script>
-    <script src="~/js/search_autocomplete.js"></script>
+    <script src="~/js/Autocomplete/search_autocomplete.js"></script>
+    <script src="~/lib/PreloadJS/preloadjs.min.js"></script>
     @RenderSection("Dashboard", required: false)
 </body>
 </html>

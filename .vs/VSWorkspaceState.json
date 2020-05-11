@@ -2,12 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\app",
+    "\\app\\bin",
     "\\app\\Controllers",
-    "\\app\\Models",
-    "\\app\\obj",
-    "\\app\\Views",
-    "\\app\\Views\\Shared"
+    "\\app\\Models"
   ],
-  "SelectedNode": "\\app\\Views\\Shared\\_Layout.cshtml",
+  "SelectedNode": "\\README.md",
   "PreviewInSolutionExplorer": false
 }

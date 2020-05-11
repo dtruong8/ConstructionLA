@@ -42,6 +42,17 @@
         "autocompeter.min.js",
         "autocompeter.min.css"
       ]
+    },
+    {
+      "library": "PreloadJS@1.0.1",
+      "destination": "wwwroot/PreloadJS/"
+    },
+    {
+      "library": "pace@1.0.2",
+      "destination": "wwwroot/pace/",
+      "files": [
+        "themes/blue/pace-theme-loading-bar.min.css"
+      ]
     }
   ]
 }

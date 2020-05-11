@@ -4,85 +4,85 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
     ViewData["Title"] = "Matrix Dashboard";
     var records = ViewData["Permits"] as IList<Permit>;
+    var business_name = ViewData["Contractor Name"];
 }
-<div class="container-fluid w-75 py-2">
-    <a>
-        <h3 class="text-left">
-            @ViewData["Contractor Name"]
-        </h3>
-    </a>
-</div>
-<div class="container-fluid w-75 py-2 h-auto">
-    <div class="row">
-        <div class="col-md">
-            <div class="card border-0 h-100">
-                <div class="card-body">
-                    <div id="mapid" style="height:100%"></div>
+<link href="~/lib/pace/themes/blue/pace-theme-loading-bar.min.css" rel="stylesheet" />
+<script src="~/lib/PreloadJS/preloadjs.min.js"></script>
+<div id="progress"></div>
+<div id="datavisualization" class="container-fluid">
+    <div class="container-fluid  w-75 py-2">
+        <a>
+            <h3 class="text-left">
+                @ViewData["Contractor Name"]
+            </h3>
+        </a>
+    </div>
+    <div class="container-fluid w-75 py-2 h-auto">
+        <div class="row">
+            <div class="col-md">
+                <div class="card border-0 h-100">
+                    <div class="card-body">
+                        <div id="mapid" style="width: 810px; height: 550px"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md d-inline-block">
+                <div class="card border-0 h-100 shadow-sm">
+                    <div class="card-body" style="text-align:center;">
+                        <div id="datatable"></div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-md">
-            <div class="card border-0 h-100 shadow-sm">
-                <div class="card-body">
-                    <div id="datatable"></div>
+    </div>
+    <div class="container-fluid w-75 py-2 mx-auto">
+        <div class="row">
+            <div class="col-md">
+                <div class="card border-0 h-100 shadow-sm">
+                    <div class="card-body">
+                        <canvas id="line" height="75"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid w-75 py-2 mx-auto">
+        <div class="row">
+            <div class="col-md">
+                <div class="card border-0 h-100 shadow-sm">
+                    <div class="card-body">
+                        <canvas id="horizontalbargraph"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card border-0 h-100 shadow-sm">
+                    <div class="card-body">
+                        <canvas id="donutgraph"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card border-0 h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="card-title">Average Evaluation</div>
+                        <div class="card-text">$1,000,000</div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="container-fluid w-75 py-2 mx-auto">
-    <div class="row">
-        <div class="col-md">
-            <div class="card border-0 h-100 shadow-sm">
-                <div class="card-body">
-                    <canvas id="line" height="75"></canvas>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container-fluid w-75 py-2 mx-auto">
-    <div class="row">
-        <div class="col-md">
-            <div class="card border-0 h-100 shadow-sm">
-                <div class="card-body">
-                    <canvas id="horizontalbargraph"></canvas>
-                </div>
-            </div>
-        </div>
-        <div class="col-md">
-            <div class="card border-0 h-100 shadow-sm">
-                <div class="card-body">
-                    <canvas id="donutgraph"></canvas>
-                </div>
-            </div>
-        </div>
-        <div class="col-md">
-            <div class="card border-0 h-100 shadow-sm">
-                <div class="card-body text-center">
-                    <div class="card-title">Average Evaluation</div>
-                    <div class="card-text">$1,000,000</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
 
 @section Dashboard{
-    <script type="text/javascript">
-        var temp_data = @Html.Raw(JsonConvert.SerializeObject(records));
-        console.log(temp_data);
-    </script>
     <script src="https://unpkg.com/sortablejs@1.7.0/Sortable.min.js"></script>
     <script src="https://unpkg.com/clusterize.js@0.18.0/clusterize.min.js"></script>
     <script src="https://unpkg.com/frappe-datatable@0.0.5/dist/frappe-datatable.min.js"></script>
     <script src="~/lib/leaflet/leaflet.js"></script>
     <script src="~/lib/Chart.js/Chart.bundle.min.js"></script>
-    <script src="~/js/data_table.js"></script>
-    <script src="~/js/Charts/LineGraph.js"></script>
-    <script src="~/js/Charts/HorizontalBarGraph.js"></script>
-    <script src="~/js/Charts/DonutGraph.js"></script>
-    <script src="~/js/Leaflet/Map.js"></script>
-
+    <script src="~/js/Preload/preloader.js"></script>
+    <script type="text/javascript">
+        var temp_data = @Html.Raw(JsonConvert.SerializeObject(records));
+        initPreload();
+    </script>
 }

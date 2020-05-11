@@ -30,9 +30,11 @@
         data: {
             labels: statuses,
             datasets: [{
-                backgroundColor: [  'rgba(245,230,99,1)',
-                                    'rgba(156,56,72,1)',
-                                    'rgba(23,96,135,1)'
+                backgroundColor: [  'rgb(178,34,34,.8)'/*RED*/,
+                                    'rgba(30,144,255,.8)'/*Blue*/,
+                                    'rgba(255,215,0,.8)' /*YELLOW*/,
+                                    'rgba(46, 139, 87,.8)'/*GREEN*/,
+                                    'rgba(255,165,0,.8)' /*ORANGE*/
                 ],
 
                 data: num_of_status,
@@ -43,10 +45,13 @@
         options: {
             title: {
                 text: 'Status',
+                fontSize: 18,
+                fontColor: '#000000',
                 position: 'top',
                 display: true
             },
             legend: {
+                position: 'bottom',
                 display: false
             }
         }

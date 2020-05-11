@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FxMjwopHcHgx4dySrFt7uXA8E/oOajQZ46TMEkJEZ6rl14hgf9F/kGZDLJyuroiP+lPGtIKNlYu5cq5mr+TCWQ==",
+  "dgSpecHash": "teBfMlywxi3b7BqH91aFHXP/+iOEQvtUX7KwEtyV3ZgBCAQRoUejlgZ8t2y0KdrYF6PqlDLDjwu0cVsrHnznJA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dean Truong\\Source\\Repos\\dtruong8\\.Net-Core-DV-Open-Data-LADBS\\app\\app.csproj",
+  "projectFilePath": "C:\\Users\\Dean Truong\\source\\repos\\dtruong8\\.Net-Core-DV-Open-Data-LADBS\\app\\app.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dean Truong\\.nuget\\packages\\cassandracsharpdriver\\3.14.0\\cassandracsharpdriver.3.14.0.nupkg.sha512",
     "C:\\Users\\Dean Truong\\.nuget\\packages\\elasticsearch.net\\7.6.1\\elasticsearch.net.7.6.1.nupkg.sha512",
@@ -29,6 +29,7 @@
     "C:\\Users\\Dean Truong\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.0\\microsoft.extensions.primitives.3.1.0.nupkg.sha512",
     "C:\\Users\\Dean Truong\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
     "C:\\Users\\Dean Truong\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\Dean Truong\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.8\\microsoft.visualstudio.azure.containers.tools.targets.1.10.8.nupkg.sha512",
     "C:\\Users\\Dean Truong\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\3.1.1\\microsoft.visualstudio.web.codegeneration.3.1.1.nupkg.sha512",
     "C:\\Users\\Dean Truong\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.contracts\\3.1.1\\microsoft.visualstudio.web.codegeneration.contracts.3.1.1.nupkg.sha512",
     "C:\\Users\\Dean Truong\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\3.1.1\\microsoft.visualstudio.web.codegeneration.core.3.1.1.nupkg.sha512",

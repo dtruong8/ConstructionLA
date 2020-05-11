@@ -31,9 +31,9 @@ function initDonutGraph() {
             labels: buildings,
             datasets: [{
                 backgroundColor: [
-                    'rgba(191, 63, 63, 1)',
-                    'rgba(120, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
+                    'rgb(178,34,34,.8)'/*RED*/,
+                    'rgba(30,144,255,.8)'/*Blue*/,
+                    'rgba(255,215,0,.8)' /*YELLOW*/
                 ],
                 data: num_of_building
             }]
@@ -43,11 +43,14 @@ function initDonutGraph() {
         options: {
             title: {
                 text: 'Permit Sub-Type',
+                fontSize: 18,
+                fontColor: '#000000',
                 position: 'top',
                 display: true
             },
             legend: {
-                display: false
+                position: 'bottom',
+                display: true
             }
         }
     });
