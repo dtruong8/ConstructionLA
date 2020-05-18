@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dean Truong\\source\\repos\\dtruong8\\.Net-Core-DV-Open-Data-LADBS\\app\\app.csproj": {}
+    "C:\\Users\\Dean Truong\\Source\\Repos\\dtruong8\\.Net-Core-DV-Open-Data-LADBS\\app\\app.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dean Truong\\source\\repos\\dtruong8\\.Net-Core-DV-Open-Data-LADBS\\app\\app.csproj": {
+    "C:\\Users\\Dean Truong\\Source\\Repos\\dtruong8\\.Net-Core-DV-Open-Data-LADBS\\app\\app.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dean Truong\\source\\repos\\dtruong8\\.Net-Core-DV-Open-Data-LADBS\\app\\app.csproj",
+        "projectUniqueName": "C:\\Users\\Dean Truong\\Source\\Repos\\dtruong8\\.Net-Core-DV-Open-Data-LADBS\\app\\app.csproj",
         "projectName": "app",
-        "projectPath": "C:\\Users\\Dean Truong\\source\\repos\\dtruong8\\.Net-Core-DV-Open-Data-LADBS\\app\\app.csproj",
+        "projectPath": "C:\\Users\\Dean Truong\\Source\\Repos\\dtruong8\\.Net-Core-DV-Open-Data-LADBS\\app\\app.csproj",
         "packagesPath": "C:\\Users\\Dean Truong\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dean Truong\\source\\repos\\dtruong8\\.Net-Core-DV-Open-Data-LADBS\\app\\obj\\",
+        "outputPath": "C:\\Users\\Dean Truong\\Source\\Repos\\dtruong8\\.Net-Core-DV-Open-Data-LADBS\\app\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dean Truong\\AppData\\Roaming\\NuGet\\NuGet.Config",

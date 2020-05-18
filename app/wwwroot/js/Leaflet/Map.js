@@ -6,6 +6,10 @@ function initMap() {
         maxZoom: 20
         /*attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'*/
     });
+    var Stadia_AlidadeSmoothDark = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
+        maxZoom: 20,
+        attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+    });
 
     var NeighborHoodCouncil = getNHCLayer();
 
@@ -13,11 +17,13 @@ function initMap() {
     var mymap = new L.map('mapid',
         {
             //Setup mymap's attributes
-            center: dtla,
-            zoom: 9
+            zoomControl: true,
+            layers: [Stadia_AlidadeSmooth, NeighborHoodCouncil],
+        }).setView([34.0, -118.38], 9, {
+            reset: true
         });
-    Stadia_AlidadeSmooth.addTo(mymap);
-    NeighborHoodCouncil.addTo(mymap);
+    //Stadia_AlidadeSmoothDark.addTo(mymap);
+    //NeighborHoodCouncil.addTo(mymap);
 
     for (let permit of permits) {
         if (permit["latitude"] != null && (permit["longitude"])) {

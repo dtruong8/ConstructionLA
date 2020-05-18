@@ -32,7 +32,8 @@
     queue.loadFile("/js/Charts/LineGraph.js");
     queue.loadFile("/js/Charts/HorizontalBarGraph.js");
     queue.loadFile("/js/Charts/DonutGraph.js");
-    queue.loadFile("/js/Charts/initDataVisualization.js");
+    queue.loadFile("/js/Charts/RadarChart.js");
+    queue.loadFile("/js/initDataVisualization.js");
 
 }
 

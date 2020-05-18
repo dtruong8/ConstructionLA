@@ -10,34 +10,34 @@
 <script src="~/lib/PreloadJS/preloadjs.min.js"></script>
 <div id="progress"></div>
 <div id="datavisualization" class="container-fluid">
-    <div class="container-fluid  w-75 py-2">
+    <div class="container-fluid w-75 py-2">
         <a>
             <h3 class="text-left">
                 @ViewData["Contractor Name"]
             </h3>
         </a>
     </div>
-    <div class="container-fluid w-75 py-2 h-auto">
+    <div class="container-fluid w-75 py-2 h-auto"  style="position:relative">
         <div class="row">
-            <div class="col-md">
-                <div class="card border-0 h-100">
+            <div class="col-sm">
+                <div class="card border-0 h-100 shadow-sm">
                     <div class="card-body">
-                        <div id="mapid" style="width: 810px; height: 550px"></div>
+                        <div id="mapid" style="height:100%;"></div>
                     </div>
                 </div>
             </div>
-            <div class="col-md d-inline-block">
+            <div class="col-sm">
                 <div class="card border-0 h-100 shadow-sm">
-                    <div class="card-body" style="text-align:center;">
-                        <div id="datatable"></div>
+                    <div class="card-body">
+                        <div id="datatable" style="height: 100%;"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid w-75 py-2 mx-auto">
+    <div class="container-fluid w-75 py-2 mx-auto"  style="position:relative">
         <div class="row">
-            <div class="col-md">
+            <div class="col-sm">
                 <div class="card border-0 h-100 shadow-sm">
                     <div class="card-body">
                         <canvas id="line" height="75"></canvas>
@@ -46,27 +46,26 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid w-75 py-2 mx-auto">
+    <div class="container-fluid w-75 py-2 mx-auto" style="position:relative">
         <div class="row">
-            <div class="col-md">
+            <div class="col-sm col-xs-12">
                 <div class="card border-0 h-100 shadow-sm">
                     <div class="card-body">
                         <canvas id="horizontalbargraph"></canvas>
                     </div>
                 </div>
             </div>
-            <div class="col-md">
+            <div class="col-sm col-xs-12">
                 <div class="card border-0 h-100 shadow-sm">
                     <div class="card-body">
                         <canvas id="donutgraph"></canvas>
                     </div>
                 </div>
             </div>
-            <div class="col-md">
+            <div class="col-sm col-xs-12">
                 <div class="card border-0 h-100 shadow-sm">
-                    <div class="card-body text-center">
-                        <div class="card-title">Average Evaluation</div>
-                        <div class="card-text">$1,000,000</div>
+                    <div class="card-body">
+                        <canvas id="radarchart"></canvas>
                     </div>
                 </div>
             </div>
