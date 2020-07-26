@@ -118,7 +118,6 @@ C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\a
 C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\app.pdb
 C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\app.Views.dll
 C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\app.Views.pdb
-C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\SODA.dll
 C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
 C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
@@ -192,10 +191,8 @@ C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\r
 C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.csprojAssemblyReference.cache
 C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\staticwebassets\app.StaticWebAssets.Manifest.cache
 C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\staticwebassets\app.StaticWebAssets.xml
-C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.RazorAssemblyInfo.cache
 C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.RazorAssemblyInfo.cs
 C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.AssemblyInfoInputs.cache
@@ -214,11 +211,8 @@ C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\a
 C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.csproj.CopyComplete
 C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.dll
 C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.pdb
-C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.csproj.CoreCompileInputs.cache
 C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.genruntimeconfig.cache
 C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\libman.json
-C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
-C:\Users\deant\Github\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\Razor\Views\Home\Dashboard.cshtml.g.cs
 C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -335,3 +329,14 @@ C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\bin\
 C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\Razor\Views\Dashboard\Dashboard.cshtml.g.cs
 C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.csproj.CoreCompileInputs.cache
 C:\Users\Dean Truong\Source\Repos\dtruong8\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\deant\GitHub\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\Elasticsearch.Net.dll
+C:\Users\deant\GitHub\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\Nest.dll
+C:\Users\deant\GitHub\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\Razor\Views\Dashboard\Dashboard.cshtml.g.cs
+C:\Users\deant\GitHub\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.csproj.CoreCompileInputs.cache
+C:\Users\deant\GitHub\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\deant\GitHub\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\DnsClient.dll
+C:\Users\deant\GitHub\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\MongoDB.Bson.dll
+C:\Users\deant\GitHub\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\MongoDB.Driver.dll
+C:\Users\deant\GitHub\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\MongoDB.Driver.Core.dll
+C:\Users\deant\GitHub\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\MongoDB.Libmongocrypt.dll
+C:\Users\deant\GitHub\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\SharpCompress.dll

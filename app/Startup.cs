@@ -29,7 +29,8 @@ namespace app
             services.AddSingleton<IContractorRepository, ContractorRepository>();
             services.AddSingleton<IPermitRepository, PermitRepository>();
             services.AddElasticsearch(Configuration);
-            services.AddCassandra(Configuration);
+            //services.AddCassandra(Configuration);
+            services.AddMongo(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
