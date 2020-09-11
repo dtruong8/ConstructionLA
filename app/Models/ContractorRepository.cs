@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Nest;
+using MongoDB.Driver;
+using MongoDB.Bson;
 
 namespace app.Models
 {
@@ -12,9 +14,18 @@ namespace app.Models
         private List<Contractor> _contractorList = new List<Contractor>();
         private readonly IElasticClient _elasticClient;
 
-        public ContractorRepository(IElasticClient elasticClient)
+        private readonly IMongoCollection<Rank> _collection_ratings;
+        private readonly IMongoCollection<Contractor> _collection_license;
+        private readonly IMongoClient _mongoClient;
+
+        public ContractorRepository(IElasticClient elasticClient, IMongoClient mongoClient)
         {
             _elasticClient = elasticClient;
+            _mongoClient = mongoClient;
+            var database = _mongoClient.GetDatabase("constructionla_db");
+
+            _collection_ratings = database.GetCollection<Rank>("business-ratings");
+            _collection_license = database.GetCollection<Contractor>("business-info");
         }
 
         public List<Contractor> getContractor()
@@ -55,6 +66,21 @@ namespace app.Models
                 });     
             }
             return result;
+        }
+
+        public List<Rank> getRanks()
+        {
+            return _collection_ratings.Find(new BsonDocument()).ToList();
+        }
+
+        public List<Rank> getRankByName(string name)
+        {
+            return _collection_ratings.Find(x => x.contractor_business_name == name).ToList();
+        }
+
+        public List<Contractor> getLicenseByName(string name)
+        {
+            return _collection_license.Find(x => x.contractors_business_name == name).ToList();
         }
 
     }

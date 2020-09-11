@@ -9,5 +9,9 @@ namespace app.Models
     {
         // Provides autocomplete suggestions
         List<Contractor> getSuggestions(string phrase);
+        List<Rank> getRanks();
+        List<Rank> getRankByName(string name);
+
+        List<Contractor> getLicenseByName(string name);
     }
 }

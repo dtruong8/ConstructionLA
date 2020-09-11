@@ -340,3 +340,5 @@ C:\Users\deant\GitHub\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\M
 C:\Users\deant\GitHub\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\MongoDB.Driver.Core.dll
 C:\Users\deant\GitHub\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\MongoDB.Libmongocrypt.dll
 C:\Users\deant\GitHub\.Net-Core-DV-Open-Data-LADBS\app\bin\Debug\netcoreapp3.1\SharpCompress.dll
+C:\Users\deant\GitHub\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\app.csprojAssemblyReference.cache
+C:\Users\deant\GitHub\.Net-Core-DV-Open-Data-LADBS\app\obj\Debug\netcoreapp3.1\Razor\Views\TopRated\TopRated.cshtml.g.cs

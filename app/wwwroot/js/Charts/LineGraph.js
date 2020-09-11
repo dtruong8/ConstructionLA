@@ -1,7 +1,7 @@
 function initLineGraph() {
     console.log("Loading Line Graph...");
     var ctx = document.getElementById('line').getContext('2d');
-    const permits = temp_data;
+    const permits = temp_data["Records"];
     var yearsnpermit = {};
     const years = ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']
     const num_of_permits = [];

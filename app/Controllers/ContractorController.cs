@@ -22,5 +22,6 @@ namespace app.Controllers
             return JsonConvert.SerializeObject(_contractor.getSuggestions(phrase));
         }
 
+
     }
 }

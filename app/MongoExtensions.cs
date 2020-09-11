@@ -10,8 +10,8 @@ namespace app
     {
         public static void AddMongo(this IServiceCollection services, IConfiguration configuration)
         {
-            var connectionstring = configuration["mongodb:connnectionstring"];
-            var client = new MongoClient("mongodb://admin:admin@localhost:27017");
+            var connectionstring = configuration["mongodb:connectionstring"];
+            var client = new MongoClient(connectionstring);
 
             services.AddSingleton<IMongoClient>(client);
         }

@@ -57,7 +57,7 @@ namespace app
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Dashboard}/{action=Dashboard}/");
+                    pattern: "{controller=TopRated}/{action=TopRated}/");
             });
  
         }

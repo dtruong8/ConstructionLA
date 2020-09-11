@@ -1,7 +1,7 @@
 ﻿function initRadarChart() {
     console.log("Loading Radar Chart...");
     var ctx = document.getElementById('radarchart').getContext('2d');
-    const permits = temp_data;
+    const permits = temp_data["Records"];
     const specialization = ["Bldg-Addition", "Bldg-Alter/Repair", "Bldg-Demolition",
         "Bldg-New", "Bldg-Relocation", "Electrical", "Fire Sprinkler",
         "Grading", "HVAC", "Nonbldg-Addition", "Nonbldg-Alter/Repair", "Nonbldg-New", "Plumbing",

@@ -1,0 +1,27 @@
+﻿@model app.ViewModels.TopRatedViewModel
+@using Newtonsoft.Json
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var records = ViewData["Data"];
+}
+<link href="~/lib/pace/themes/blue/pace-theme-loading-bar.min.css" rel="stylesheet" />
+<div id="progress"></div>
+<div class="container-fluid TopRated" style="text-align:center">
+    <h1>Top Rated Companies</h1>
+    <div class="container">
+        <div id="toprated-datatable" class="table table-striped"></div>
+    </div>
+</div>
+
+@section TopRated{
+    <script src="https://unpkg.com/sortablejs@1.7.0/Sortable.min.js"></script>
+    <script src="https://unpkg.com/clusterize.js@0.18.0/clusterize.min.js"></script>
+    <script src="https://unpkg.com/frappe-datatable@0.0.5/dist/frappe-datatable.min.js"></script>
+    <script src="~/js/Preload/preloader-toprated.js"></script>
+    <script type="text/javascript">
+        var ranked_companies = @Html.Raw(JsonConvert.SerializeObject(records));
+        initPreload_TopRated();
+    </script>
+
+}
+

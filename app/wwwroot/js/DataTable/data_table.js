@@ -1,6 +1,6 @@
 ﻿function initDataTable() {
     var records = []
-    for (let permit of temp_data) {
+    for (let permit of temp_data["Records"]) {
         var temp = [permit["permitnum"], permit["permit_type"], permit["permit_subtype"], permit["status"], permit["issue_date"]]
         records.push(temp);
     }
@@ -35,7 +35,7 @@
                 editable: false,
                 resizeable: true,
                 focusable: false,
-                widith: 30
+                width: 30
             }
         ],
         data: records,

@@ -1,7 +1,8 @@
 function initDonutGraph() {
     console.log('Loading Donut Graph...');
     var ctx = document.getElementById('donutgraph').getContext('2d');
-    const permits = temp_data;
+    const permits = temp_data["Records"];
+    console.log(permits);
     var buildings = [];
     var num_of_building = [];
     var buildingNnumber = {};
@@ -42,7 +43,7 @@ function initDonutGraph() {
         // Configuration options go here
         options: {
             title: {
-                text: 'Permit Sub-Type',
+                text: 'Building Types',
                 fontSize: 18,
                 fontColor: '#000000',
                 position: 'top',

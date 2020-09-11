@@ -1,10 +1,9 @@
-@model IList<app.Models.Permit>
+@model app.ViewModels.ContractorDashboardViewModel
 @using Newtonsoft.Json
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
-    ViewData["Title"] = "Matrix Dashboard";
-    var records = ViewData["Permits"] as IList<Permit>;
-    var business_name = ViewData["Contractor Name"];
+    ViewData["Title"] = "ConstructionLA Dashboard";
+    var records = ViewData["Data"];
 }
 <link href="~/lib/pace/themes/blue/pace-theme-loading-bar.min.css" rel="stylesheet" />
 <script src="~/lib/PreloadJS/preloadjs.min.js"></script>
@@ -17,7 +16,32 @@
             </h3>
         </a>
     </div>
-    <div class="container-fluid w-75 py-2 h-auto"  style="position:relative">
+    <div class="container-fluid w-75 py-2 h-auto" style="position:relative">
+        <div class="row">
+            <div class="col-sm col-md">
+                <div class="card border-0 h-100 shadow-sm">
+                    <div class="card-body" style="text-align:left;">
+                       <div id="contractor-info"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm col-md">
+                <div class="card border-0 h-100 shadow-sm">
+                    <div class="card-body" style="text-align:center;padding: 80px 0 80px 0px;">
+                        <span id="stars"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm col-md">
+                <div class="card border-0 h-100 shadow-sm">
+                    <div class="card-body" style="text-align:center;padding: 80px 0 80px 0px;">
+                        <span id="review-count"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid w-75 py-2 h-auto" style="position:relative">
         <div class="row">
             <div class="col-sm col-md">
                 <div class="card border-0 h-100 shadow-sm">
@@ -29,13 +53,13 @@
             <div class="col-sm">
                 <div class="card border-0 h-100 shadow-sm">
                     <div class="card-body">
-                        <div id="datatable" style="height: 100%;"></div>
+                        <div id="datatable" style="height: 550px;"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid w-75 py-2 mx-auto"  style="position:relative">
+    <div class="container-fluid w-75 py-2 mx-auto" style="position:relative">
         <div class="row">
             <div class="col-sm col-md">
                 <div class="card border-0 h-100 shadow-sm">
@@ -79,9 +103,9 @@
     <script src="https://unpkg.com/frappe-datatable@0.0.5/dist/frappe-datatable.min.js"></script>
     <script src="~/lib/leaflet/leaflet.js"></script>
     <script src="~/lib/Chart.js/Chart.bundle.min.js"></script>
-    <script src="~/js/Preload/preloader.js"></script>
+    <script src="~/js/Preload/preloader-dashboard.js"></script>
     <script type="text/javascript">
         var temp_data = @Html.Raw(JsonConvert.SerializeObject(records));
-        initPreload();
+        initPreload_Dashboard();
     </script>
 }

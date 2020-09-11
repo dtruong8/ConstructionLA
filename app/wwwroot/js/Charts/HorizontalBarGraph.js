@@ -1,7 +1,7 @@
 ﻿function initHorizontalGraph() {
     console.log('Loading Horizontal Bar Graph...');
     var ctx = document.getElementById('horizontalbargraph').getContext('2d');
-    const permits = temp_data;
+    const permits = temp_data["Records"];
     var statuses = [];
     var num_of_status = [];
     var statusNnumber = {};
@@ -44,7 +44,7 @@
         // Configuration options go here
         options: {
             title: {
-                text: 'Status',
+                text: 'Permit Status',
                 fontSize: 18,
                 fontColor: '#000000',
                 position: 'top',

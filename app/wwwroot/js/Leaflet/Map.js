@@ -1,6 +1,6 @@
 function initMap() {
     console.log('Loading Map...');
-    const permits = temp_data;
+    const permits = temp_data["Records"];
 
     var Stadia_AlidadeSmooth = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', {
         maxZoom: 20
